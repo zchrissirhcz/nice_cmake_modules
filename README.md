@@ -2,34 +2,34 @@
 
 <img alt="GitHub" src="https://img.shields.io/github/license/zchrissirhcz/nice_cmake_modules">
 
-[English Version](README_en.md)
+[中文版](README.md)
 
-> CMake 一时爽，find_package() 火葬场。
+> CMake is cool to use, until find_package() sucks.
 
-## 简介
+## Intro
 
-放一些 FindXXX.cmake 脚本，作为 cmake 安装路径下 modules 的补充，让 find_package() 准确的找到包。
+Put some FindXXX.cmake scripts here, as more accurate alternatives for `<cmake_install_dir>/share/cmake/Modules/FindXXX.cmake`.
 
-获取：
+Get:
 ```bash
 git clone https://github.com/zchrissirhcz/nice_cmake_modules
 ```
 
-在个人工程中引入:
-```cmake
+Integrate:
+```bash
 list(INSERT CMAKE_MODULE_PATH 0 "/path/to/nice_cmake_modules")
 ```
 
-如果先前有cmake缓存，需要清理后重新执行cmake以生效。
+Then remove cmake cache if any, otherwise it won't take effect.
 
-## 目标平台
+## Platform
 
 Android / Windows / Linux / MacOSX
 
-## 模块列表
+## Module list
 
 [FindZLIB.cmake](FindZLIB.cmake)
 
-## 项目起源
+## Project origin
 
-见[此处](why.md)。
+See [here](why.md).
