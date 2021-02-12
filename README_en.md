@@ -17,7 +17,7 @@ git clone https://github.com/zchrissirhcz/nice_cmake_modules
 
 Integrate:
 ```bash
-list(INSERT CMAKE_PREFIX_PATH 0 "/path/to/nice_cmake_modules")
+list(INSERT CMAKE_MODULE_PATH 0 "/path/to/nice_cmake_modules")
 ```
 
 Then remove cmake cache if any, otherwise it won't take effect.

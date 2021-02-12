@@ -17,7 +17,7 @@ git clone https://github.com/zchrissirhcz/nice_cmake_modules
 
 在个人工程中引入:
 ```cmake
-list(INSERT CMAKE_PREFIX_PATH 0 "/path/to/nice_cmake_modules")
+list(INSERT CMAKE_MODULE_PATH 0 "/path/to/nice_cmake_modules")
 ```
 
 如果先前有cmake缓存，需要清理后重新执行cmake以生效。
